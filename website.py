@@ -45,7 +45,8 @@ def plot():
 
     script1, div1 = components(p)
     cdn_js=CDN.js_files[0]
-    cdn_css=CDN.css_files[0]
+    #cdn_css=CDN.css_files[0] - 12
+    cdn_css='https://cdn.pydata.org/bokeh/release/bokeh-1.0.2.min.css'
     return render_template('plot.html', script1=script1, div1=div1, cdn_css=cdn_css, cdn_js=cdn_js)
 
 @app.route('/')
